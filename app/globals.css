@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+/* ──────────────────────────────────────────────────────────────
+   Design tokens — Yuvasree's pastel lavender system
+
+   lavender  #E8DFFF  main brand
+   mist      #F8F5FF  light lavender background
+   wisteria  #D6C8F2  deeper pastel lavender
+   blush     #F3E2EC  pastel blush
+   peach     #F8E9DF  pastel peach
+   sage      #E3EEE7  pastel sage
+   cream     #FFF9F2  soft cream (page base)
+   ink       #302A3D  deep muted plum (text)
+   fog       #615A6E  muted grey-purple (secondary text)
+   plum      #341539  dark purple (solid buttons)
+   ────────────────────────────────────────────────────────────── */
+
+@theme inline {
+  --color-lavender: #e8dfff;
+  --color-mist: #f8f5ff;
+  --color-wisteria: #d6c8f2;
+  --color-blush: #f3e2ec;
+  --color-peach: #f8e9df;
+  --color-sage: #e3eee7;
+  --color-cream: #fff9f2;
+  --color-ink: #302a3d;
+  --color-fog: #615a6e;
+  --color-plum: #341539;
+
+  --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+}
+
+@layer base {
+  html {
+    scroll-padding-top: 6rem;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+  body {
+    background-color: var(--color-cream);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    background-color: var(--color-wisteria);
+    color: var(--color-ink);
+  }
+
+  :focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--color-ink) 75%, transparent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+/* Delicate paper grain — keeps large pastel gradients from banding
+   and gives surfaces a printed, editorial feel. */
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 80;
+  pointer-events: none;
+  opacity: 0.032;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
