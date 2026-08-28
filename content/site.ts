@@ -26,7 +26,7 @@ export const site = {
   wordmark: "YP",
   location: "Chennai, India",
   description:
-    "Yuvasree Prakash — second-year Computer Science student at VIT Chennai, Web Developer at Mirai Innovations and Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
+    "Yuvasree Prakash — second-year Computer Science student at VIT Chennai, Web Developer Intern at Mirai Innovations and Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
 
   nav: {
     links: [
@@ -42,7 +42,7 @@ export const site = {
     status: "Currently learning, building and evolving",
     headingLead: "Building my way from ideas to",
     headingEmphasis: "meaningful digital experiences.",
-    copy: "I’m Yuvasree Prakash, a second-year Computer Science student at VIT Chennai — currently a Web Developer at Mirai Innovations and a Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
+    copy: "I’m Yuvasree Prakash, a second-year Computer Science student at VIT Chennai — currently a Web Developer Intern at Mirai Innovations and a Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
     primaryCta: { label: "Explore My Journey", href: "#story" },
     secondaryCta: { label: "Connect With Me", href: "#contact" },
   },
@@ -78,7 +78,7 @@ export const site = {
     heading: "Where the learning gets real.",
     roles: [
       {
-        role: "Web Developer",
+        role: "Web Developer Intern",
         company: "Mirai Innovations",
         period: "Ongoing",
         summary:
