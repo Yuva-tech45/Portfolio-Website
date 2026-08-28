@@ -26,7 +26,7 @@ export const site = {
   wordmark: "YP",
   location: "Chennai, India",
   description:
-    "Yuvasree Prakash — Computer Science student at VIT Chennai and Frontend Developer Intern at RSN One / BuildX, exploring how software, design and product thinking come together.",
+    "Yuvasree Prakash — second-year Computer Science student at VIT Chennai, Web Developer at Mirai Innovations and Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
 
   nav: {
     links: [
@@ -42,7 +42,7 @@ export const site = {
     status: "Currently learning, building and evolving",
     headingLead: "Building my way from ideas to",
     headingEmphasis: "meaningful digital experiences.",
-    copy: "I’m Yuvasree Prakash, a Computer Science student at VIT Chennai and a Frontend Developer Intern, exploring how software, design and product thinking come together.",
+    copy: "I’m Yuvasree Prakash, a second-year Computer Science student at VIT Chennai — currently a Web Developer at Mirai Innovations and a Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
     primaryCta: { label: "Explore My Journey", href: "#story" },
     secondaryCta: { label: "Connect With Me", href: "#contact" },
   },
@@ -68,7 +68,7 @@ export const site = {
         numeral: "III",
         title: "Learning through real-world experience",
         tint: "sage",
-        body: "My internship at RSN One / BuildX moved learning out of the classroom. Real clients, honest feedback and real constraints are teaching me that good software is more than clean code — it’s understanding users, communicating clearly and refining until it feels right.",
+        body: "Two roles moved learning out of the classroom. At Mirai Innovations I took a website that existed as a basic HTML concept and made it functional, refining it round after round on the founder’s feedback. At RSN One the picture keeps widening — interfaces, app design, email experiences, testing, research into customer behaviour, launch support. Good software, I’m learning, is more than clean code: it’s understanding users, testing assumptions and caring about the whole experience.",
       },
     ],
   },
@@ -76,23 +76,46 @@ export const site = {
   experience: {
     eyebrow: "Current experience",
     heading: "Where the learning gets real.",
-    role: "Frontend Developer Intern",
-    company: "RSN One / BuildX",
-    period: "June 2026 — Present",
-    summary:
-      "At BuildX I get to work close to the product — shaping frontend concepts and premium interface directions, testing platforms, and iterating on ideas with direct input from clients and founders.",
-    contributionsLabel: "I’ve contributed to",
-    contributions: [
-      "Frontend and landing-page concepts",
-      "Premium interface and visual direction",
-      "Next.js, TypeScript and Tailwind CSS exploration",
-      "Lifestyle-based product-discovery ideas",
-      "Responding to client and founder feedback",
-      "QA testing of supplier and admin portals",
-      "AI-assisted design and development workflows",
-      "Responsive design, usability and performance thinking",
+    roles: [
+      {
+        role: "Web Developer",
+        company: "Mirai Innovations",
+        period: "Ongoing",
+        summary:
+          "Mirai’s website began as a basic HTML file — a static sketch of how the site was supposed to look. My work has been to bring that concept to life: making it functional and usable, then improving it continuously through the founder’s direct feedback.",
+        contributionsLabel: "I’ve been working on",
+        contributions: [
+          "Turning the static HTML concept into a functional website",
+          "Building out the interactions and functionality the site needed",
+          "Iterative refinements shaped by rounds of founder feedback",
+          "Ongoing improvement and maintenance of the website",
+        ],
+        note: "The design concept wasn’t mine — it already existed as a basic HTML file. The meaningful part has been bringing it to life as a working website, and making it a little better with every round of feedback.",
+      },
+      {
+        role: "Frontend Developer Intern",
+        company: "RSN One",
+        period: "June 2026 — Present",
+        summary:
+          "At RSN One my work has grown well beyond landing pages — into interface and app concepts, email and brand experiences, testing, research into customer behaviour and launch support. It’s where I’m learning how the pieces of a real product come together, iterating with direct input from clients and founders.",
+        contributionsLabel: "I’ve contributed to",
+        contributions: [
+          "Landing-page concepts and premium visual direction",
+          "AI Concierge interface ideas and app design",
+          "Membership and order digital experiences",
+          "Dark and light HTML email templates and brand imagery",
+          "Testing the app and the customer, supplier and admin portals",
+          "Research into customer behaviour that supports company and product decisions",
+          "Product-discovery ideas, launch and social-platform support",
+          "Next.js, TypeScript, Tailwind CSS and AI-assisted workflows",
+        ],
+        note: "Much of this work is collaborative and iterative — shaped by feedback, refined in rounds, and not always shipped as-is. That’s exactly where the learning is.",
+      },
     ],
-    note: "Much of this work is conceptual and iterative — shaped by feedback, refined in rounds, and not always shipped as-is. That’s exactly where the learning is.",
+    campus: {
+      label: "Beyond the internships",
+      line: "On campus, I’m a member of the Tech Researchers Club (R&D and Projects) and the Business Innovation Community (Software) — keeping the same curiosity pointed at research, projects and software built with other students.",
+    },
   },
 
   capabilities: {
@@ -101,6 +124,12 @@ export const site = {
     intro:
       "Not an exhaustive list of tools — an honest snapshot of how I think and work right now.",
     groups: [
+      {
+        title: "Web Development",
+        description:
+          "Turning static concepts into working websites — building the functionality they need, then improving and maintaining them over time.",
+        tools: ["HTML", "CSS", "JavaScript"],
+      },
       {
         title: "Frontend Development",
         description:
@@ -116,7 +145,7 @@ export const site = {
       {
         title: "Product & Interface Thinking",
         description:
-          "Asking who something is for and how it should feel — then letting those answers guide what gets built.",
+          "Asking who something is for and how it should feel — then letting research, testing and honest feedback guide what gets built.",
         tools: [],
       },
       {
