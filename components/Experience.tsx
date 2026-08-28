@@ -40,7 +40,7 @@ export function Experience() {
                     <p className="inline-flex items-center gap-2.5 rounded-full border border-ink/[0.07] bg-mist px-4 py-2 text-sm text-ink">
                       <span
                         aria-hidden
-                        className="size-2 rounded-full bg-[#a9c7b6] motion-safe:animate-pulse"
+                        className="size-2 rounded-full bg-wisteria motion-safe:animate-pulse"
                       />
                       {role.period}
                     </p>

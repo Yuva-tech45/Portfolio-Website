@@ -69,7 +69,7 @@ export function Hero() {
           transition={{ duration: 21, repeat: Infinity, ease: "easeInOut" }}
         />
         <motion.div
-          className="absolute -bottom-36 right-[10%] h-[24rem] w-[24rem] rounded-full bg-sage opacity-60 blur-3xl"
+          className="absolute -bottom-36 right-[10%] h-[24rem] w-[24rem] rounded-full bg-wisteria opacity-50 blur-3xl"
           animate={still ? undefined : { x: [0, -16, 0], y: [0, -14, 0] }}
           transition={{ duration: 25, repeat: Infinity, ease: "easeInOut" }}
         />
@@ -118,7 +118,7 @@ export function Hero() {
           >
             <a
               href={site.hero.primaryCta.href}
-              className="group inline-flex items-center gap-2.5 rounded-full bg-plum px-7 py-3.5 text-sm font-medium text-cream shadow-[0_18px_40px_-18px_rgba(52,21,57,0.6)] transition-all hover:-translate-y-0.5 hover:bg-[#4a2151]"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-plum px-7 py-3.5 text-sm font-medium text-cream shadow-[0_18px_40px_-18px_rgba(52,21,57,0.6)] transition-all hover:-translate-y-0.5 hover:bg-lilac-300 hover:text-plum"
             >
               {site.hero.primaryCta.label}
               <svg
@@ -140,7 +140,7 @@ export function Hero() {
             </a>
             <a
               href={site.hero.secondaryCta.href}
-              className="rounded-full border border-ink/[0.12] bg-white/60 px-7 py-3.5 text-sm font-medium text-ink transition-all hover:-translate-y-0.5 hover:border-ink/25 hover:bg-white"
+              className="rounded-full border border-ink/[0.12] bg-white/60 px-7 py-3.5 text-sm font-medium text-ink transition-all hover:-translate-y-0.5 hover:border-lilac-400 hover:bg-lilac-50"
             >
               {site.hero.secondaryCta.label}
             </a>

@@ -3,11 +3,11 @@ import { Eyebrow } from "@/components/Eyebrow";
 import { Reveal } from "@/components/Reveal";
 
 const ROW_STYLES = [
-  { dot: "bg-wisteria", hover: "hover:bg-lavender/35" },
-  { dot: "bg-[#efcdb4]", hover: "hover:bg-peach/40" },
-  { dot: "bg-[#e4bed2]", hover: "hover:bg-blush/40" },
-  { dot: "bg-[#aecbbb]", hover: "hover:bg-sage/45" },
-  { dot: "bg-lavender", hover: "hover:bg-mist" },
+  { dot: "bg-wisteria", hover: "hover:bg-lilac-50" },
+  { dot: "bg-[#efcdb4]", hover: "hover:bg-lilac-100" },
+  { dot: "bg-[#e4bed2]", hover: "hover:bg-lilac-200" },
+  { dot: "bg-[#cbbce9]", hover: "hover:bg-lilac-rose" },
+  { dot: "bg-lavender", hover: "hover:bg-lilac-300" },
 ];
 
 export function Capabilities() {

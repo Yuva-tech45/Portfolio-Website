@@ -8,11 +8,23 @@
    wisteria  #D6C8F2  deeper pastel lavender
    blush     #F3E2EC  pastel blush
    peach     #F8E9DF  pastel peach
-   sage      #E3EEE7  pastel sage
    cream     #FFF9F2  soft cream (page base)
    ink       #302A3D  deep muted plum (text)
    fog       #615A6E  muted grey-purple (secondary text)
    plum      #341539  dark purple (solid buttons)
+
+   Hover scale — every hover tint on the site draws from this
+   single very-light pastel lilac family. Every background tint is
+   near-white so a hover reads as a faint pastel wash over the
+   light theme, never as a medium or dark fill:
+   lilac-50   #FAF7FF  almost-white lilac
+   lilac-100  #F5F0FE  very pale lavender
+   lilac-200  #F0E9FC  extremely light pastel purple
+   lilac-300  #EAE1FA  faint violet tint (deepest background tint)
+   lilac-400  #E3D9F6  light lavender — borders only
+   lilac-rose #F8EEF8  very light pink-lilac
+   lilac-500  #A08EC6  soft pastel violet — text/icon hover accent
+                       ONLY, never a background
    ────────────────────────────────────────────────────────────── */
 
 @theme inline {
@@ -21,11 +33,18 @@
   --color-wisteria: #d6c8f2;
   --color-blush: #f3e2ec;
   --color-peach: #f8e9df;
-  --color-sage: #e3eee7;
   --color-cream: #fff9f2;
   --color-ink: #302a3d;
   --color-fog: #615a6e;
   --color-plum: #341539;
+
+  --color-lilac-50: #faf7ff;
+  --color-lilac-100: #f5f0fe;
+  --color-lilac-200: #f0e9fc;
+  --color-lilac-300: #eae1fa;
+  --color-lilac-400: #e3d9f6;
+  --color-lilac-rose: #f8eef8;
+  --color-lilac-500: #a08ec6;
 
   --font-display: var(--font-playfair), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-jakarta), ui-sans-serif, system-ui, -apple-system,

@@ -8,18 +8,21 @@ import { Reveal } from "@/components/Reveal";
 
 const EASE: [number, number, number, number] = [0.22, 1, 0.36, 1];
 
+// Chapter node tints — all drawn from the soft lilac pastel family
+// (the keys are the content's tint names; the rendered colors are
+// lavender, pink-lilac and powder lilac).
 const TINTS: Record<string, { fill: string; halo: string }> = {
   lavender: {
     fill: "bg-lavender",
     halo: "shadow-[0_0_0_10px_rgba(232,223,255,0.55)]",
   },
   blush: {
-    fill: "bg-blush",
-    halo: "shadow-[0_0_0_10px_rgba(243,226,236,0.6)]",
+    fill: "bg-lilac-rose",
+    halo: "shadow-[0_0_0_10px_rgba(248,238,248,0.6)]",
   },
   sage: {
-    fill: "bg-sage",
-    halo: "shadow-[0_0_0_10px_rgba(227,238,231,0.65)]",
+    fill: "bg-lilac-300",
+    halo: "shadow-[0_0_0_10px_rgba(234,225,250,0.65)]",
   },
 };
 

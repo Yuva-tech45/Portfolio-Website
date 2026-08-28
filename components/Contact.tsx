@@ -36,10 +36,10 @@ function Row({ item }: { item: ContactItem }) {
         href={item.href}
         target={external ? "_blank" : undefined}
         rel={external ? "noopener noreferrer" : undefined}
-        className="group flex items-center gap-5 rounded-2xl px-3 py-6 transition-colors hover:bg-mist md:px-5"
+        className="group flex items-center gap-5 rounded-2xl px-3 py-6 transition-colors hover:bg-lilac-100 md:px-5"
       >
         {inner}
-        <span className="grid size-11 shrink-0 place-items-center rounded-full border border-ink/10 bg-white/70 text-ink transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:bg-plum group-hover:text-cream">
+        <span className="grid size-11 shrink-0 place-items-center rounded-full border border-ink/10 bg-white/70 text-ink transition-all duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5 group-hover:bg-lilac-200">
           <ArrowIcon />
         </span>
       </a>

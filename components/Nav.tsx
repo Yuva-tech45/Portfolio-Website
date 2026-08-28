@@ -54,7 +54,7 @@ export function Nav() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-fog transition-colors hover:text-ink"
+              className="text-sm text-fog transition-colors hover:text-lilac-500"
             >
               {link.label}
             </a>
@@ -63,7 +63,7 @@ export function Nav() {
             href={resumeHref}
             target={resumeIsFile ? "_blank" : undefined}
             rel={resumeIsFile ? "noopener noreferrer" : undefined}
-            className="rounded-full bg-plum px-5 py-2 text-sm font-medium text-cream shadow-[0_10px_24px_-12px_rgba(52,21,57,0.55)] transition-all hover:-translate-y-0.5 hover:bg-[#4a2151]"
+            className="rounded-full bg-plum px-5 py-2 text-sm font-medium text-cream shadow-[0_10px_24px_-12px_rgba(52,21,57,0.55)] transition-all hover:-translate-y-0.5 hover:bg-lilac-300 hover:text-plum"
           >
             Resume
           </a>
@@ -108,7 +108,7 @@ export function Nav() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="rounded-xl px-3 py-3 text-lg text-ink transition-colors hover:bg-lavender/40"
+                  className="rounded-xl px-3 py-3 text-lg text-ink transition-colors hover:bg-lilac-100"
                 >
                   {link.label}
                 </a>
