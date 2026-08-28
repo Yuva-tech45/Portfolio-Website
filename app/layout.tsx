@@ -17,10 +17,10 @@ const jakarta = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Yuvasree Prakash — Software Engineer & Computer Science Student",
+  title: "Yuvasree Prakash — Software Engineer",
   description: site.description,
   openGraph: {
-    title: "Yuvasree Prakash — Software Engineer & Computer Science Student",
+    title: "Yuvasree Prakash — Software Engineer",
     description: site.description,
     type: "website",
     siteName: "Yuvasree Prakash",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "Yuvasree Prakash — Software Engineer & Computer Science Student",
+    title: "Yuvasree Prakash — Software Engineer",
     description: site.description,
   },
 };
