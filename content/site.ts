@@ -26,7 +26,7 @@ export const site = {
   wordmark: "YP",
   location: "Chennai, India",
   description:
-    "Yuvasree Prakash — second-year Computer Science student at VIT Chennai, Web Developer Intern at Mirai Innovations and Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
+    "Yuvasree Prakash — second-year Computer Science student at VIT Chennai, Web Developer Intern at Mirai Innovations and Frontend Developer at RSN One, exploring how software, design and product thinking come together.",
 
   nav: {
     links: [
@@ -42,7 +42,7 @@ export const site = {
     status: "Currently learning, building and evolving",
     headingLead: "Building my way from ideas to",
     headingEmphasis: "meaningful digital experiences.",
-    copy: "I’m Yuvasree Prakash, a second-year Computer Science student at VIT Chennai — currently a Web Developer Intern at Mirai Innovations and a Frontend Developer Intern at RSN One, exploring how software, design and product thinking come together.",
+    copy: "I’m Yuvasree Prakash, a second-year Computer Science student at VIT Chennai — currently a Web Developer Intern at Mirai Innovations and a Frontend Developer at RSN One, exploring how software, design and product thinking come together.",
     primaryCta: { label: "Explore My Journey", href: "#story" },
     secondaryCta: { label: "Connect With Me", href: "#contact" },
   },
@@ -80,7 +80,8 @@ export const site = {
       {
         role: "Web Developer Intern",
         company: "Mirai Innovations",
-        period: "Ongoing",
+        period: "Aug 2026 — Present",
+        timeline: null as string | null,
         summary:
           "Mirai’s website began as a basic HTML file — a static sketch of how the site was supposed to look. My work has been to bring that concept to life: making it functional and usable, then improving it continuously through the founder’s direct feedback.",
         contributionsLabel: "I’ve been working on",
@@ -93,28 +94,40 @@ export const site = {
         note: "The design concept wasn’t mine — it already existed as a basic HTML file. The meaningful part has been bringing it to life as a working website, and making it a little better with every round of feedback.",
       },
       {
-        role: "Frontend Developer Intern",
+        role: "Frontend Developer",
         company: "RSN One",
-        period: "June 2026 — Present",
+        period: "May 2026 — Present",
+        timeline:
+          "Intern: May 2026 — Aug 2026 · Part-time employee: Aug 2026 — Present",
         summary:
-          "At RSN One my work has grown well beyond landing pages — into interface and app concepts, email and brand experiences, testing, research into customer behaviour and launch support. It’s where I’m learning how the pieces of a real product come together, iterating with direct input from clients and founders.",
+          "At RSN One my work has grown well beyond landing pages — into interface work, the frontend of the company’s app, email and brand experiences, testing, research into customer behaviour and launch support. It’s where I’m learning how the pieces of a real product come together, iterating with direct input from clients and founders.",
         contributionsLabel: "I’ve contributed to",
         contributions: [
           "Landing-page concepts and premium visual direction",
-          "AI Concierge interface ideas and app design",
+          "AI Concierge interface ideas and broader interface concepts",
           "Membership and order digital experiences",
           "Dark and light HTML email templates and brand imagery",
-          "Testing the app and the customer, supplier and admin portals",
+          "Next.js, TypeScript and Tailwind CSS across the web experiences",
+          "Frontend of the company’s app, including app design and testing",
+          "QA across the website and the customer, supplier and admin portals",
           "Research into customer behaviour that supports company and product decisions",
           "Product-discovery ideas, launch and social-platform support",
-          "Next.js, TypeScript, Tailwind CSS and AI-assisted workflows",
+          "AI-assisted design and development workflows",
         ],
         note: "Much of this work is collaborative and iterative — shaped by feedback, refined in rounds, and not always shipped as-is. That’s exactly where the learning is.",
       },
     ],
     campus: {
       label: "Beyond the internships",
-      line: "On campus, I’m a member of the Tech Researchers Club (R&D and Projects) and the Business Innovation Community (Software) — keeping the same curiosity pointed at research, projects and software built with other students.",
+      line: "On campus, I keep the same curiosity pointed at research, projects and software built with other students.",
+      clubs: [
+        {
+          name: "Business Innovation Community (BiC)",
+          detail: "Software Department",
+        },
+        { name: "Tech Researchers Club", detail: "R&D and Projects" },
+        { name: "Zero Bugs Club (ZBC)", detail: "Technical Team" },
+      ],
     },
   },
 

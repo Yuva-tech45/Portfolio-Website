@@ -36,6 +36,11 @@ export function Experience() {
                       <p className="mt-2.5 font-medium text-ink">
                         {role.company}
                       </p>
+                      {role.timeline && (
+                        <p className="mt-2 text-sm leading-relaxed text-fog">
+                          {role.timeline}
+                        </p>
+                      )}
                     </div>
                     <p className="inline-flex items-center gap-2.5 rounded-full border border-ink/[0.07] bg-mist px-4 py-2 text-sm text-ink">
                       <span
@@ -85,6 +90,23 @@ export function Experience() {
             <p className="mt-4 max-w-2xl text-sm leading-relaxed text-fog">
               {experience.campus.line}
             </p>
+            <ul className="mt-5 space-y-2.5">
+              {experience.campus.clubs.map((club) => (
+                <li
+                  key={club.name}
+                  className="flex gap-3.5 text-sm leading-relaxed text-fog"
+                >
+                  <span
+                    aria-hidden
+                    className="mt-[0.5rem] size-1.5 shrink-0 rotate-45 bg-wisteria"
+                  />
+                  <span>
+                    <span className="font-medium text-ink/85">{club.name}</span>{" "}
+                    — {club.detail}
+                  </span>
+                </li>
+              ))}
+            </ul>
           </Reveal>
         </div>
       </div>

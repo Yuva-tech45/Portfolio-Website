@@ -2,13 +2,16 @@ import { site } from "@/content/site";
 import { Eyebrow } from "@/components/Eyebrow";
 import { Reveal } from "@/components/Reveal";
 
-const ROW_STYLES = [
-  { dot: "bg-wisteria", hover: "hover:bg-lilac-50" },
-  { dot: "bg-[#efcdb4]", hover: "hover:bg-lilac-100" },
-  { dot: "bg-[#e4bed2]", hover: "hover:bg-lilac-200" },
-  { dot: "bg-[#cbbce9]", hover: "hover:bg-lilac-rose" },
-  { dot: "bg-lavender", hover: "hover:bg-lilac-300" },
+const ROW_DOTS = [
+  "bg-wisteria",
+  "bg-[#efcdb4]",
+  "bg-[#e4bed2]",
+  "bg-[#cbbce9]",
+  "bg-lavender",
 ];
+
+/* One shared hover tint across every capability row. */
+const ROW_HOVER = "hover:bg-[#f7edf7]";
 
 export function Capabilities() {
   const capabilities = site.capabilities;
@@ -31,7 +34,7 @@ export function Capabilities() {
 
         <div className="mt-14 border-y border-ink/[0.07] md:mt-16">
           {capabilities.groups.map((group, index) => {
-            const style = ROW_STYLES[index % ROW_STYLES.length];
+            const dot = ROW_DOTS[index % ROW_DOTS.length];
             return (
               <Reveal
                 key={group.title}
@@ -43,12 +46,12 @@ export function Capabilities() {
                 }
               >
                 <div
-                  className={`grid gap-3 rounded-2xl px-4 py-8 transition-colors duration-300 md:grid-cols-[minmax(0,17rem)_1fr] md:gap-12 md:px-6 md:py-9 ${style.hover}`}
+                  className={`grid gap-3 rounded-2xl px-4 py-8 transition-colors duration-300 md:grid-cols-[minmax(0,17rem)_1fr] md:gap-12 md:px-6 md:py-9 ${ROW_HOVER}`}
                 >
                   <div className="flex items-start gap-3.5 md:items-center">
                     <span
                       aria-hidden
-                      className={`mt-2 size-2 shrink-0 rounded-full md:mt-0 ${style.dot}`}
+                      className={`mt-2 size-2 shrink-0 rounded-full md:mt-0 ${dot}`}
                     />
                     <h3 className="font-display text-xl font-medium text-ink md:text-2xl">
                       {group.title}
